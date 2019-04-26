@@ -1,0 +1,61 @@
+﻿<Window x:Class="MasterMindGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MasterMindGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="800">
+    <Grid Height="450">
+        <Grid HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="150">
+            <Grid HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="150">
+                <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="75" BorderThickness="0" Click="Button_Click" Background="#FFFF3333"/>
+            </Grid>
+            <Button x:Name="button_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="75" BorderThickness="0" Click="Button_Click" Margin="0,75,0,0" Background="#FFF9F260"/>
+            <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="75" BorderThickness="0" Click="Button_Click" Margin="0,150,0,0" Background="#FF83F960"/>
+            <Button x:Name="button_Copy2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="75" BorderThickness="0" Click="Button_Click" Margin="0,225,0,0" Background="#FF6AC6FB"/>
+            <Button x:Name="button_Copy3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="75" BorderThickness="0" Click="Button_Click" Margin="0,300,0,0" Background="#FFB679FF"/>
+            <Button x:Name="button_Copy4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="75" BorderThickness="0" Click="Button_Click" Margin="0,375,0,0" Background="#FFFB8DD8"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="450" Margin="150,0,0,0" VerticalAlignment="Top" Width="300">
+            <Grid HorizontalAlignment="Left" Height="50" Margin="0,10,0,0" VerticalAlignment="Top" Width="300">
+                <Button x:Name="Player1Button1" Content="Button" HorizontalAlignment="Center" Margin="5,10,225,10" VerticalAlignment="Center" Width="70" Height="30" RenderTransformOrigin="0.562,1.17" Background="White" Click="Player1Button1_Click"/>
+                <Button x:Name="Player1Button2" Content="Button" HorizontalAlignment="Center" Margin="80,10,150,10" VerticalAlignment="Center" Width="70" Height="30" RenderTransformOrigin="1.529,0.561" Background="White"/>
+                <Button x:Name="Player1Button3" Content="Button" HorizontalAlignment="Center" Margin="155,10,75,10" VerticalAlignment="Center" Width="70" Height="30" RenderTransformOrigin="1.529,0.561" Background="White"/>
+                <Button x:Name="Player1Button4" Content="Button" HorizontalAlignment="Right" Margin="0,10" VerticalAlignment="Center" Width="70" Height="30" RenderTransformOrigin="1.529,0.561" Background="White"/>
+            </Grid>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="375" Margin="150,65,0,0" VerticalAlignment="Top" Width="300">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="161*"/>
+                <ColumnDefinition Width="139*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="P2Row1Col1Btn" Content="Button" HorizontalAlignment="Center" Margin="5,0,86,0" VerticalAlignment="Top" Width="70" Height="68" RenderTransformOrigin="0.567,-1.204" Background="White" Click="P2Row1Col1Btn_Click" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row1Col2Btn" Content="Button" HorizontalAlignment="Center" Margin="80,0,11,307" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row1Col3Btn" Content="Button" HorizontalAlignment="Center" Margin="155,0,75,307" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.ColumnSpan="2" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row1Col4Btn" Content="Button" HorizontalAlignment="Right" Margin="0,0,0,307" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.Column="1" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row2Col1Btn" Content="Button" HorizontalAlignment="Center" Margin="5,73,86,0" VerticalAlignment="Top" Width="70" Height="68" RenderTransformOrigin="0.567,-1.204" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row2Col2Btn" Content="Button" HorizontalAlignment="Center" Margin="80,73,11,234" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row2Col3Btn" Content="Button" HorizontalAlignment="Center" Margin="155,73,75,234" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.ColumnSpan="2" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row2Col4Btn" Content="Button" HorizontalAlignment="Right" Margin="0,73,0,234" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.Column="1" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row3Col1Btn" Content="Button" HorizontalAlignment="Center" Margin="5,146,86,0" VerticalAlignment="Top" Width="70" Height="68" RenderTransformOrigin="0.567,-1.204" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row3Col2Btn" Content="Button" HorizontalAlignment="Center" Margin="80,146,11,161" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row3Col3Btn" Content="Button" HorizontalAlignment="Center" Margin="155,146,75,161" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.ColumnSpan="2" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row3Col4Btn" Content="Button" HorizontalAlignment="Right" Margin="0,146,0,161" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.Column="1" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row4Col1Btn" Content="Button" HorizontalAlignment="Center" Margin="5,219,86,0" VerticalAlignment="Top" Width="70" Height="68" RenderTransformOrigin="0.567,-1.204" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row4Col2Btn" Content="Button" HorizontalAlignment="Center" Margin="80,219,11,88" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row4Col3Btn" Content="Button" HorizontalAlignment="Center" Margin="155,219,75,88" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.ColumnSpan="2" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row4Col4Btn" Content="Button" HorizontalAlignment="Right" Margin="0,219,0,88" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.Column="1" Click="P2Row4Col4Btn_Click" Background="White" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row5Col1Btn" Content="Button" HorizontalAlignment="Center" Margin="5,292,86,0" VerticalAlignment="Top" Width="70" Height="68" RenderTransformOrigin="0.567,-1.204" Background="White" Click="Player2BoardButton" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row5Col2Btn" Content="Button" HorizontalAlignment="Center" Margin="81,292,10,15" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Background="White" Click="Player2BoardButton" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row5Col3Btn" Content="Button" HorizontalAlignment="Center" Margin="155,292,75,15" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.ColumnSpan="2" Background="White" Click="Player2BoardButton" Style="{StaticResource Flat_Button2}"/>
+            <Button x:Name="P2Row5Col4Btn" Content="Button" HorizontalAlignment="Right" Margin="0,292,0,15" VerticalAlignment="Center" Width="70" Height="68" RenderTransformOrigin="1.529,0.561" Grid.Column="1" Background="White" Click="Player2BoardButton" Style="{StaticResource Flat_Button2}"/>
+            <Grid HorizontalAlignment="Left" Height="50" Margin="149,18,-60,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="6.1,0.56" Grid.Column="1">
+                <Button x:Name="button2_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="23" RenderTransformOrigin="2.763,0.9" Height="23"/>
+                <Button x:Name="button2_Copy1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="23" RenderTransformOrigin="2.763,0.9" Height="23" Margin="28,0,-1,0"/>
+                <Button x:Name="button2_Copy2" HorizontalAlignment="Left" Width="23" RenderTransformOrigin="2.763,0.9" Margin="0,27,0,0"/>
+                <Button x:Name="button2_Copy3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="23" RenderTransformOrigin="2.763,0.9" Height="23" Margin="28,28,-1,-1"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
